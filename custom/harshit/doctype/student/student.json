@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-06-13 16:30:46.751404",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_section",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "full_name",
+  "joining_date",
+  "is_active",
+  "naming_series",
+  "savebutton",
+  "column_break_nxdb",
+  "email",
+  "date_of_birth_dob",
+  "your_address",
+  "combined_address",
+  "gender",
+  "nationality",
+  "blood_group",
+  "attach_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_section",
+   "fieldtype": "Section Break",
+   "label": "Student"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Read Only",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "column_break_nxdb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth_dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth (DOB)",
+   "options": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOthers",
+   "reqd": 1,
+   "sort_options": 1
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "O+\nO-\nA+\nA-\nB+\nB-"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "in_preview": 1,
+   "label": "Joining Date",
+   "options": "Today"
+  },
+  {
+   "fieldname": "your_address",
+   "fieldtype": "Link",
+   "label": "Your Address",
+   "options": "Address"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is active"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Convention",
+   "options": ".first_name.-.YYYY.-.MM.-.####\n.first_name.-.MM.-.####"
+  },
+  {
+   "fieldname": "savebutton",
+   "fieldtype": "Button",
+   "label": "Create User"
+  },
+  {
+   "fieldname": "combined_address",
+   "fieldtype": "HTML",
+   "label": "Combined Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image",
+   "label": "Attach Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-17 15:34:12.165508",
+ "modified_by": "Administrator",
+ "module": "harshit",
+ "name": "Student",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-14 10:32:52.002319",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "program_participant_section",
+  "participant",
+  "preview"
+ ],
+ "fields": [
+  {
+   "fieldname": "program_participant_section",
+   "fieldtype": "Section Break",
+   "label": "Program Participant"
+  },
+  {
+   "fieldname": "participant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Participant",
+   "options": "Student"
+  },
+  {
+   "fieldname": "preview",
+   "fieldtype": "Button",
+   "label": "Preview"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-14 17:05:30.814006",
+ "modified_by": "Administrator",
+ "module": "harshit",
+ "name": "Program Participant",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
