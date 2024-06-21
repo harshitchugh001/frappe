@@ -7,10 +7,10 @@ frappe.ui.form.on("Student", {
     },
 
     savebutton(frm) {
-        // Code inside savebutton function
+       
         console.log(frm.doc);
 
-        // Making a server-side call to insert a new User document
+        
         frappe.call({
             method: 'frappe.client.insert',
             args: {
@@ -45,7 +45,7 @@ frappe.ui.form.on("Student", {
                 },
                 callback: function(r) {
                     if (r.message) {
-                        // Updating the combined_address field with fetched address details
+                        
                         frm.fields_dict['combined_address'].html('<p>' + r.message.address_line1 + '<span>,</span>' + r.message.address_line2 + '<span>,</span> ' + r.message.city + '<span>,</span>' + r.message.state + ' <span>,</span>' + r.message.country + ' <span>,</span>' + r.message.pincode + '</p>');
                     }
                 }
